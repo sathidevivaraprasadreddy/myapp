@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Counter from './Counter';
+import CounterButtonFunc from './CounterButtonFunc';
+import ButtonClickHandler from "./ButtonClickHandler";
+import ConditionalRender from "./ConditionalRender";
+import StringLiterals from "./StringLiterals";
+import CounterIncreasement from "./CounterIncreasement";
+import DataFetcher from "./DataFetcher";
+import ParentComponent from "./ParentComponent";
+import SimpleForm from "./SimpleForm";
+import NameList from "./NameList";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2>EXPERIMENT 2</h2>
+      <Counter />
+      <CounterButtonFunc />
+      <ButtonClickHandler />
+      <ConditionalRender/>
+      <StringLiterals/>
+      <h2>EXPERIMENT 3</h2>
+      <CounterIncreasement />
+      <DataFetcher/>
+      <ParentComponent/>
+      <SimpleForm/>
+      <NameList/>
     </div>
   );
 }
